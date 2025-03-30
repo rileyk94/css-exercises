@@ -42,3 +42,24 @@ img {
   justify-content: center;
   background: #eee;
 }
+
+/* the official solution only used one class for each "item" within 'content',
+and only added the width to that class, here are the changes they made
+
+body {
+  text-align: center;
+}
+
+.title {
+  margin-bottom: 32px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 52px;
+}
+
+.info {
+  max-width: 200px;
+} */
