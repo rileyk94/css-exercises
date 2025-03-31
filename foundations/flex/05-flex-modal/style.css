@@ -23,6 +23,7 @@ body {
   padding: 10px;
   display: flex;
   gap:10px;
+  flex-shrink: 1;
 }
 
 .icon {
@@ -62,7 +63,10 @@ button {
 .message {
   display: flex;
   flex-direction: column;
-  flex: 1;
+  flex: wrap;
+  gap: 12 px;
+  flex-shrink: 5;
+  /* flex: 1; */
 }
 
 .header {
@@ -79,10 +83,18 @@ button.continue {
   background: royalblue;
   border: 1px solid royalblue;
   color: white;
+  max-width: 100px;
 }
 
 button.cancel {
   background: white;
   border: 1px solid #ddd;
   color: royalblue;
+  max-width: 100px;
+}
+
+.choose {
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
