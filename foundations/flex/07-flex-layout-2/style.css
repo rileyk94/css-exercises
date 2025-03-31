@@ -4,12 +4,14 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
-  /* align-items: center; */
+  justify-content: center;
+  align-items: stretch;
+  
 }
 
 .content {
   display: flex;
+  flex-grow: 1;
 }
 
 .header {
@@ -23,9 +25,17 @@ body {
   height: 72px;
   background: #eee;
   color: darkmagenta;
-  justify-content: flex-end;
+  text-align: center;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+}
 .sidebar {
   width: 300px;
   background: royalblue;
@@ -43,5 +53,7 @@ body {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
-  max-width: 200px;
+  max-width: 250px;
+  height: 150px;
+  padding: 10px;
 }
